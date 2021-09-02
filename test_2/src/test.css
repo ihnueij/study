@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button {
+    cursor: pointer;
+    outline: 0;
+    border: 0 none;
+}
+#mainContainer {
+    width: 100%;
+    height: 100%;
+}
+#topContainer {
+    width: 100%;
+    height: 75px;
+    background-color: #0389d2;
+}
+h1 ,h5{
+    display: block;
+}
+#leftContainer{
+    position: absolute;
+    width: 280px;
+    height: calc(100% - 75px);
+    background-color: #cccccc;
+    padding: 30px;
+}
+#leftContainer ul li .btn_pro {
+    border: 0 none;
+    margin-bottom: 10px;
+}
+#pro_container {
+    position: absolute;
+    left: 280px;
+    top: 100px;
+    width: calc(100% - 280px);
+    height: calc(100% - 100px);
+    padding: 30px;
+}
+#pro_container div.pro_titleArea {
+    position: relative;
+    width: 100%;
+    min-height: 36px;
+}
+#pro_container div.pro_titleArea .pro_btnArea1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 200px);
+}
+.pro_btnArea1 button.btnProAction {
+        /*display: inline-block;*/
+        width: 130px;
+        height: 30px;
+        background-color: #0d7eba;
+        color: white;
+        margin-left: 10px; /**/
+}
+#pro_container form.searchArea {
+    /*position: relative;*/
+    margin-top: 15px;
+    width: 100%;
+    border: 1px solid #c9d5ed;
+    background-color: #f6fbff;
+    padding: 13px 25px;
+    /*min-height: 60px;*/
+}
+#pro_container form.searchArea input {
+    height: 35px;
+}
+#pro_container div.contentArea {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: calc(100% - 105px);
+    overflow: hidden;/*쓸모없는 공간 안보이게*/
+}
+#pro_container div.contentArea div.gridArea {
+    width: calc(100% - 420px);
+    height: 100%;
+    float: left;
+    /* border: 1px solid #ffb32c; */
+}
+#pro_container div.contentArea div.gridArea div.gridTitleArea {
+    position: relative;
+    /* border: 1px solid #fddfdf; */
+    width: 100%;
+    height: 37px;
+}
+#pro_container div.contentArea div.gridArea div.gridTitleArea div.gridBtnArea {
+    position: absolute;
+    /*top: 0;*/
+    right: 0;
+    /*width: 250px;*/
+    text-align: right;
+    /* border: 1px solid #0d7eba; */
+}
+#pro_container div.contentArea div.gridArea div.gridTitleArea div.gridBtnArea button.btnGridAction {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-color: darkgray;
+    color: white;
+    /*font-size: 15px;*/
+    margin-left: 12px;
+}
+.data_grid{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+div.data_grid {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 55px) !important;
+     /*border: 1px solid #28b883; */
+    /*margin-top: 7px;*/
+}
+
+.grid-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.grid_body {
+    border-top: none;
+    height: 485px;
+}
+.grid_header, .grid_body, .grid_header > .grid_header_cell, .grid_row > .grid_cell, .grid_row > .grid_cell, .grid_edit-row > .grid_cell {
+    border: 1px solid #cccccc;
+
+}
+.grid_table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+div.formArea {
+    width: 400px;
+    height: 100%;
+    float: right;
+}
+div.formArea div.formTitleArea {
+    position: relative;
+    /* border: 1px solid #fddfdf; */
+    width: 100%;
+    height: 37px;
+}div.formArea div.formTitleArea {
+    position: relative;
+    /* border: 1px solid #fddfdf; */
+    width: 100%;
+    height: 37px;
+}
+div.formArea form {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 55px) !important;
+    border: 1px solid #cccccc;
+    border-top: 2px solid #555555;
+    margin-top: 7px;
+}
+ul {
+     display: block;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     padding-inline-start: 40px;
+ }
+
+form {
+    display: block;
+    margin-top: 0em;
+}

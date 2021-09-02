@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="test2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="total">
+    <div class="total_header">
+        <h2>통합재난관제시스템</h2>
+        <p>관리자님 안녕하세요</p>
+    </div>
+        <div class="mainbox">
+            <div class="leftbox" style="border: 1px solid black; width: 300px; height: 1000px; background: blueviolet">
+                    <h3>시스템관리</h3>
+                    <ul>
+                        <li>사용자 관리</li>
+                        <li>장치 관리</li>
+                    </ul>
+            </div>
+                <div class="rightbox" style="border: 1px solid black; width:100%;  background:tomato">
+                    <div class="rightbox_header">
+                        <div class="rightbox_header_title">
+                            <div class="header_bnt">
+                            <h4>사용자 관리</h4>
+                                <input type="button" class="header_bnt_d" value="조회">
+                                <input type="button" class="header_bnt_d" value="저장">
+                            </div>
+                        </div>
+                        <div class="header_input">
+                        사용자 ID/명 <input type="text" id="user">
+                        </div>
+                    </div>
+                        <div class="main_conteiner" style="border: 1px solid black; width:100%; height: 100%; background:violet">
+                            <div class="conteiner1" style="border: 1px solid black; width:800px;  background:darkcyan">
+                                    <div class="con1_title">
+                                        <table class="con1_table">
+                                            <tr class="con1_row">
+                                                <th class="con_1cell">사용자ID</th>
+                                                <th class="con_1cell">사용자명</th>
+                                                <th class="con_1cell">사용자그룹</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="con1_body" style="height:200px;">
+                                        <table class="con1-1_table">
+                                            <tr class="no_data">
+                                                <td colspan="9" class="con1_cell">데이터가 존재하지 않습니다</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>
+                            <div class="conteiner2" style="border: 1px solid black; width:200px;  background:cyan;">
+                                <form id="info_Form" >
+                                    <ul>
+                                        <li>
+                                            <label>사용자ID</label>
+                                            <input type="text" >
+                                        </li>
+                                        <li>
+                                            <label>비밀번호</label>
+                                            <input type="password">
+                                        </li>
+                                        <li>
+                                            <label>사용자명</label>
+                                            <input type="text">
+                                        </li>
+                                        <li>
+                                            <label>사용자그룹</label>
+                                            <select id="userGroup">
+                                                <option value="1">관리자</option>
+                                                <option value="2">사용자</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label>템플릿유형</label>
+                                            <select id="tmplType">
+                                                <option value="1">듀얼</option>
+                                                <option value="2">싱글</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label>비고</label>
+                                            <input type="text">
+                                        </li>
+                                        <li>
+                                            <label>사용여부</label>
+                                            <input type="radio" name="userRadio" value="Y">
+                                            <label>Y</label>
+                                            <input type="radio" name="userRadio" value="N">
+                                            <label>N</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+        </div>
+</div>
+</body>
+</html>

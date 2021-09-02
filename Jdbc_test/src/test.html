@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="test.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="total">
+    <div id="total-header">
+        <h1 id="logo">통합재난관제시스템[관리]</h1>
+        <h5 id="name">관리자[admin1]님 안녕하세요</h5>
+    </div>
+    <div id="leftBox">
+        <h2 id="left_title"><img src="list_icon.png" width="28px">&nbsp;시스템 관리</h2>
+        <ul>
+            <li><a href="#">
+                <div class="left_btn">사용자 관리</div>
+            </a></li>
+            <li><a href="#">
+                <div class="left_btn">장치 관리</div>
+            </a></li>
+        </ul>
+    </div>
+    <div id="mainBox">
+        <div class="main_h">
+            <h3 class="main_title">사용자 관리</h3>
+            <div class="main_btn">
+                <button class="btnSerchGroup" id="btnSerch">조회</button>
+                <button class="btnSerchGroup">저장</button>
+            </div>
+        </div>
+        <form class="searchArea">
+            <label>사용자ID/명</label>
+            <input type="text" style="width: 200px;">
+        </form>
+        <div class="content_main">
+            <div class="content1">
+                <div class="content1_title">
+                    <div class="content1_btn">
+                        <button class="content1_btnAction">행추가</button>
+                    </div>
+                </div>
+                <div class="output">
+                    <div class="output_header">
+                        <table class="output_table">
+                            <tr class="output_row">
+                                <th class="output_cell">사용자ID</th>
+                                <th class="output_cell">사용자명</th>
+                                <th class="output_cell">사용자그룹</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="output_body scrollbar" style="height: calc(100% - 55px);">
+                        <table class="output_table">
+                            <tr class="nodata">
+                                <td colspan="9" class="output_cell" height="100%" >데이터가 존재하지 않습니다.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="content2"><!-- formAREA--->
+                <div class="content2_title"></div><!-- formtitle--->
+                <form><!-- POSTFORM1-->
+                    <UL>
+                        <li>
+                            <label>사용자ID</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label>비밀번호</label>
+                            <input type="password">
+                        </li>
+                        <li>
+                            <label>사용자명</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label>사용자그룹</label>
+                            <select id="userGroup">
+                                <option value="1">관리자</option>
+                                <option value="2">사용자</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>템플릿유형</label>
+                            <select id="tmp">
+                                <option value="1">듀얼</option>
+                                <option value="2">싱글</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>비고</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label>사용여부</label>
+                            <input type="radio" name="useRadio" value="Y">
+                            <label>Y</label>
+                            <input type="radio" name="useRadio" value="N">
+                            <label>N</label>
+                        </li>
+                    </UL>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

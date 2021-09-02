@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns:  repeat(3, 1fr);
+      grid-template-rows: repeat(5, 200px);
+      background-color: beige;
+      gap: 10px;
+    }
+    .container > div {
+      background-color: green;
+    }
+    #one {
+      grid-column: 1/3;
+      grid-row: 1/4;
+    }
+    #two {
+      grid-row: 1/3;
+    }
+    #five {
+      grid-column: 4/2;
+    }
+    #seven {
+      grid-row: 6/1;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div id="one">Image One</div>
+  <div id="two">Image Two</div>
+  <div id="three">Image Three</div>
+  <div id="four">Image Four</div>
+  <div id="five">Image Five</div>
+  <div id="six">Image Six</div>
+  <div id="seven">Image Seven</div>
+  <div id="eight">Image Eight</div>
+  <div id="nine">Image Nine</div>
+</div></body>
+</html>

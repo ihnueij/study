@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>body 태그내의 자바스크립트</h1>
+<p>자바스크립트를 이용하면 현재날짜와ㅓ 시간정보에도 손쉽게 접근할 수 있어여</p>
+
+<button onclick="printDate()">현재날짜와 시간 표시하기</button>
+<p id="date"></p>
+
+<script>
+    function printDate() {
+        document.getElementById("date").innerHTML= Date();
+
+
+    }
+</script>
+</body>
+</html>

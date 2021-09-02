@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    var color = ["white","red","blue","yellow"];
+    var i =0;
+    function changeColor(){
+        i++;
+        if(i >= color.length){
+            i =0;
+        }
+        var bodyTag = document.getElementById("theBody");
+        bodyTag.style.backgroundColor=color[i];
+    }
+  </script>
+</head>
+<body id="theBody">
+<h1><button onclick="changeColor()">배경색바꾸기</button></h1>
+</body>
+</html>

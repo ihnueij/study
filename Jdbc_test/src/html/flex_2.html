@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #header,
+    #asideLeft,
+    #article,
+    #asideRight,
+    #footer {
+      border: 1px solid black;
+      margin: 5px;
+      text-align: center;
+    }
+    #header,
+    #footer {
+      height: 70px;
+      background-color: gray;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+"leftSidebar article rightSidebar";
+      grid-template-columns: 200px 1fr 320px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    #asideLeft {
+      grid-area: leftSidebar;
+      background-color: yellow;
+    }
+    #article {
+      grid-area: article;
+      background-color: violet;
+      height: 500px;
+    }
+    #asideRight {
+      grid-area: rightSidebar;
+      background-color: yellowgreen;
+      min-height:200px;
+    }
+    /* tablet */
+    @media screen and (max-width: 1024px) {
+      .grid-container{
+        display:grid;
+        grid-template-areas:
+"leftSidebar article"
+"leftSidebar rightSidebar";
+        grid-template-columns: 200px 1fr;
+      }
+    }
+    /* mobile */
+    @media screen and (max-width: 600px) {
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+"article"
+"rightSidebar";
+        grid-template-columns: 1fr;
+      }
+      #asideLeft {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="header">Header</div>
+<div class="grid-container">
+  <div id="asideLeft">Grid Item : AsideLeft</div>
+  <div id="article">Grid Item : Article</div>
+  <div id="asideRight">Grid Item : AsideRight</div>
+</div>
+<div id="footer">Footer</div>
+</body>
+</html>

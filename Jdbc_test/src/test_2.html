@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="test_2.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>통합재난관제시스템</title>
+</head>
+<body>
+<div id="total">
+    <div id="total-header">
+        <h1 id="logo">통합재난관제시스템[관리]</h1>
+        <h4 id="name">관리자[admin1]님 안녕하세요</h4>
+    </div>
+    <div class="container"><!-- leftbox랑 mainbox flex주기위해--->
+        <div id="leftBox">
+            <h2 id="left_title"><img src="list_icon.png" width="28px">&nbsp;시스템 관리</h2>
+            <ul>
+                <li><a href="#">
+                    <div class="left_btn">사용자 관리</div>
+                </a></li>
+                <li><a href="#">
+                    <div class="left_btn">장치 관리</div>
+                </a></li>
+            </ul>
+        </div>
+        <div id="mainBox">
+            <div class="main_h"><!-- flex 양쪽사이드--->
+                <h3 class="main_title">사용자 관리</h3>
+                <div class="main_btn">
+                    <button class="btnSerchGroup" id="btnSerch">조회</button>
+                    <button class="btnSerchGroup">저장</button>
+                </div>
+            </div>
+            <form class="searchArea">
+                <label>사용자ID/명</label>
+                <input type="text">
+            </form>
+            <div class="content_main"><!--content1/content2 flex로 나누기-->
+                <div class="content1">
+                    <div class="content1_title"><!--행추가버튼 flex로 끝에 배치 -->
+                        <button class="content1_btnAction">행추가</button>
+                    </div>
+                    <div class="output"><!-- table flex 사용해서 밑으로 오게-->
+                        <table class="output_table">
+                            <tr class="output_row">
+                                <th class="output_cell">사용자ID</th>
+                                <th class="output_cell">사용자명</th>
+                                <th class="output_cell">사용자그룹</th>
+                            </tr>
+                            <tr class="nodata">
+                                <td colspan="9" class="td_output_cell" height="100%">데이터가 존재하지 않습니다.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="content2_title"></div>
+                    <div class="table_flex">
+                        <table id="se_table">
+                            <tr>
+                                <th>사용자ID</th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                                <td><input type="password"></td>
+                            </tr>
+                            <tr>
+                                <th>사용자명</th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>사용자그룹</th>
+                                <td><select style="width: 193px;">
+                                    <option value="1">관리자</option>
+                                    <option value="2">사용자</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <th>템플릿유형</th>
+                                <td><select style="width: 193px;">
+                                    <option value="1">듀얼</option>
+                                    <option value="2">싱글</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <th>비고</th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>사용여부</th>
+                                <td>
+                                    <input type="radio" name="r" id="Y" value="Y"><label>Y</label>
+                                    <input type="radio" name="r" id="N" value="N"><label>N</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

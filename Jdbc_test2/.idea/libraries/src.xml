@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="src">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/postgresql-42.2.23.jre6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-dbcp2-2.8.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-collections4-4.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-pool2-2.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/Apache Software Foundation/Tomcat 8.5/lib/tomcat-dbcp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+  </library>
+</component>

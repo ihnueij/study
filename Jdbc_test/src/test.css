@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@100;500&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    border: 0 none;
+}
+
+#total {
+    width: 100%;
+    height: 100%;
+}
+
+#total-header {
+    width: 100%;
+    height: 95px;
+    background-color: #1779da;
+    padding: 10px;
+}
+
+h1, h5 {
+    display: block;
+    color: white;
+}
+
+#logo {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+h5 {
+    text-align: right;
+}
+
+#name {
+    font-weight: 400; /*폰트굵기*/
+    font-size: 17px;
+}
+
+#leftBox {
+    position: absolute;
+    width: 300px;
+    height: calc(100% - 95px);
+    background-color: #ece9e9;
+    padding: 40px;
+}
+
+#leftBox ul li .left_btn {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#mainBox {
+    position: absolute;
+    left: 330px;
+    top: 100px;
+    width: calc(100% - 330px);
+    height: calc(100% - 100px);
+    padding: 30px;
+}
+
+#mainBox div.main_h {
+    position: relative; /*main_btn이랑 같이 어울리게*/
+    width: 100%;
+    min-height: 35px; /*이것보다 작아지는걸 방지한다*/
+}
+
+#mainBox div.main_h .main_btn {
+    position: absolute;
+    top: 0;
+    text-align: right;
+    width: calc(100% - 20px);
+}
+#btnSerch{
+    margin-right: 15px;
+}
+div{
+    border: 1px solid ;
+}
+
+.main_btn button.btnSerchGroup {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(53, 95, 176);
+    color: white;
+}
+
+.main_btn button.btnSerchGroup:hover {
+    background-color: #1779da;
+    transition-delay: 60ms;
+
+}
+
+#mainBox form.searchArea {
+    position: relative;
+    margin-top: 12px;
+    width: 100%;
+    border: 1px solid #c2d8ee;
+    background-color: aliceblue;
+    padding: 15px;
+
+}
+
+/*#mainBox form.searchArea input{*/
+/*    height: 35px;*/
+/*}*/
+#mainBox div.content_main {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow: hidden; /*쓸모없는 공간 안보이게*/
+}
+
+#mainBox div.content_main div.content1 {
+    width: calc(100% - 420px);
+    height: 100%;
+    float: left; /*content1은 왼쪽자리에*/
+}
+
+.main_title {
+    color: #1779da;
+
+}
+
+#mainBox div.content_main div.content1 div.content1_title {
+    position: relative; /*content1 박스에서만 돌아다니게*/
+    width: 100%;
+    height: 40px;
+    /*border: 1px solid brown;*/
+}
+
+#mainBox div.content_main div.content1 div.content1_title div.content1_btn {
+    position: absolute;
+    right: 0; /*버튼 오른쪽으로*/
+    text-align: right;
+}
+
+#mainBox div.content_main div.content1 div.content1_title div.content1_btn div.content1_btnAction {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-color: darkgray;
+    color: white;
+    margin-left: 12px;
+
+}
+.content1_btnAction {
+    width: 115px;
+    height: 35px;
+    background-color: dimgrey;
+    color: white;
+    font-size: 15px;
+}
+
+div .output {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 55px);
+    margin-top: 10px;
+    border-top: 2px solid #555555;
+}
+
+.output_table {
+    width: 100%;
+    table-layout: fixed; /*table크기고정*/
+    border-collapse: collapse; /*표테두라랑 셀테두리 간격 없애기*/
+    border-spacing: 0;
+}
+.output_header, .output_body .output_header {
+    background-color: #e1dede;
+}
+
+.output_body {
+    border-top: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    user-select: none;
+    height: calc(100% - 500px);
+}
+
+.output_cell {
+    text-align: center;
+    border: 1px solid #efefef;
+
+}
+
+div.content2 {
+    width: 400px;
+    height: 100%;
+    float: right;
+}
+
+div.content2 div.content2_title {
+    position: relative;
+    width: 100%;
+    height: 42px; /*content1 테이블이랑 줄 맞추기*/
+}
+
+div.content2 form {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 55px);
+    border: 1px solid #cccccc;
+    border-top: 2px solid #555555;
+    margin-top: 7px;
+}
+
+div.content2 form ul li {
+    display: block;
+    width: 100%;
+    height: 46px;
+    border-bottom: 1px solid #cccccc;
+    font-size: 15px;
+    line-height: 46px;
+}
+
+div.content2 form ul li > label:first-child { /*첫번째 라벨만 모든 자식(child) 요소 중에서 첫 번째에 위치하는 자식(child) 요소를 모두 선택함.*/
+    display: block;
+    float: left;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    background-color: #d7d7d7;
+    font-size: 15px;
+    border-right: 1px solid #cdcdcd;
+}
+
+div.content2 form ul li input[type="text"], div.content2 form ul li input[type="password"], div.content2 form ul li select, div.content2 form ul li option {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 30px;
+    line-height: 40px;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding-left: 10px;
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid #cdcdcd;
+}
+
+div.content2 form ul li input[type="radio"] {
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    margin-left: 10px;
+    line-height: 40px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+/* a태그 버튼 흔적 없애기*/
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: dimgrey;
+}
+
+button:hover {
+    background-color: darkgray
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-1 {
+            width: 100px;
+            background-color: blue;
+        }
+        .flex-2 {
+            /*position: relative;*/
+            flex: 1;
+            background-color: red;
+        }
+        .flex-2-child {
+            height: 100%;
+            width: 100;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="flex-1"></div>
+  <div class="flex-2">
+    <div class="flex-2-child"></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="test.css" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<div  id="mainContainer">
+    <div id="topContainer">
+        <h1 id="logo">통합재난관제시스템[관리]</h1>
+        <h5 id="loginUserName">관리자1님 안녕하세요</h5>
+    </div>
+    <div id="leftContainer">
+        <h2 id="pro_group">시스템관리</h2>
+        <ul>
+            <li><div class="btn_pro">사용자 관리</div></li>
+            <li><div class="btn_pro">장치 관리</div></li>
+        </ul>
+    </div>
+    <div id="pro_container">
+        <div class="pro_titleArea">
+            <h2 class="pro_title">사용자관리</h2>
+            <div class="pro_btnArea1">
+                <button id="btnSearch" class="btnProAction">조회</button>
+                <button id="btnSave" class="btnProAction">저장</button>
+            </div>
+        </div>
+        <form id="searchArea" class="searchArea">
+            <label>사용자ID/명</label>
+            <input type="text" id="s_userId" style="width: 200px;">
+        </form>
+        <div class="contentArea">
+            <div class="gridArea">
+                <div class="gridTitleArea">
+                    <div class="gridBtnArea">
+                        <button id="btnAddRow" class="btnGridAction">행추가</button>
+                    </div>
+                </div>
+                <div class="data_grid" >
+                    <div class="gird_header">
+                        <table class="grid_table">
+                            <tr class="grid_row">
+                                <th class="grid_cell">사용자ID</th>
+                                <th class="grid_cell">사용자명</th>
+                                <th class="grid_cell">사용자그룹</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="grid_body" style="height: 432.8px;">
+                        <table class="grid_table">
+                            <tr class="no_data">
+                                <td colspan="9" class="grid_cell">데이터가 존재하지 않습니다</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="formArea">
+                <div class="formTitleArea"></div>
+                <form id="postForm1">
+                    <ul>
+                        <li>
+                            <label>사용자ID</label>
+                            <input type="text" >
+                        </li>
+                        <li>
+                            <label>비밀번호</label>
+                            <input type="password">
+                        </li>
+                        <li>
+                            <label>사용자명</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label>사용자그룹</label>
+                            <select id="userGroup">
+                                <option value="1">관리자</option>
+                                <option value="2">사용자</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>템플릿유형</label>
+                            <select id="tmplType">
+                                <option value="1">듀얼</option>
+                                <option value="2">싱글</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>비고</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label>사용여부</label>
+                            <input type="radio" name="userRadio" value="Y">
+                            <label>Y</label>
+                            <input type="radio" name="userRadio" value="N">
+                            <label>N</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

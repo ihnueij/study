@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @media (max-width: 800px) {/*가로 사이즈가 800px 이하일때, grid를 적용한걸 block으로 바꾼다는 의미입니다.*/
+            #grid {
+                display: block;
+            }
+        }
+        /*#grid {*/
+        /*    border: 1px solid ;*/
+        /*    display: grid;*/
+        /*    grid-template-columns: 150px 1fr;*/
+        /*}*/
+        div{
+            border: 0px solid ;
+        }
+        h1{
+            text-align: center;
+            border-bottom: none;
+        }
+        ol{
+            border-right: 0px solid gray;
+            width: 100px;
+            margin: 0;
+            padding: 20px;
+        }
+        #article{
+            padding-left: 25px;
+        }
+    </style>
+</head>
+<body>
+<h1><a href="grid.html">wed</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="mediaQuery.html" class="saw">html</a></li>
+        <li><a href="mediaQuery.html" class="saw">css</a></li>
+        <li><a href="mediaQuery.html">javascript</a></li>
+        <li><a href="mediaQuery.html">node.js</a></li>
+        <li><a href="mediaQuery.html">java</a></li>
+        <li><a href="mediaQuery.html">spring</a></li>
+    </ol>
+    <div id="article">
+        <h2>CSS</h2>
+        <p>
+            물론 문장을 무조건 길게 써야 한다거나 짧게 써야 하는 것은 아니다. 다만 글 속에 담긴 문장들이 모두 길거나 짧다면, 문제가 될 수 있다. 글을 쓸 줄
+            아는 사람이라면 언제 길게 써야 하고 언제 짧게 써야 하는지 본능적으로 안다. 긴 문장과 짧은 문장을 적절하게 배치해야 독자에게 긴장감을 줄 수 있다.
+            결국, 문장을 짧게 써야 하느냐 길게 써야 하느냐 하는 문제는 규칙처럼 정할 수 있는 것이 아니고 그 효과를 고려하여 전략적으로 선택해야 하는 것이다.
+        </p>
+    </div>
+</div>
+</body>
+</html>
